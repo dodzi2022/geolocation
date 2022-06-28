@@ -3,15 +3,7 @@ pipeline {
     tools {
        maven "M2_HOME"
      }
-    withSonarQubeEnv {
-    // some block
-        sonar.projectKey=dodzi2022_geoMVPX0
-        sonar.organization=dodzi2022
-        sonar.host.url=https://sonarcloud.io
-        sonar.login=8739b5ca19d023862eb4539e1cdb59a48e682cac
-        sonar.sources=src
-        sonar.java.binaries=.
-}
+   
 
     stages {
         stage('Build') {
